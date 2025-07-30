@@ -8,7 +8,7 @@ import DataImportExport from './pages/DataImportExport';
 
 function App() {
   return (
-    <Router basename="/FIRE35">
+    <Router basename={import.meta.env.PROD ? '/FIRE35' : '/'}>
       <div className="min-h-screen bg-gray-50">
         <Layout>
           <Routes>
